@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata:
+  name: employee-service
+build:
+  artifacts:
+    - image: moreyog/employee-service
+      jib: {}
+  tagPolicy:
+    gitCommit: {}
